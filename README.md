@@ -1,2 +1,4 @@
 # Blackjack
-Blackjack game, standard 21 bust, stand on 17.
+Play blackjack with computer! Standard 21 bust, stand on 17.
+
+
