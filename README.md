@@ -12,6 +12,7 @@ There are a total of 4 files. They are:
 # Dependencies
 
 Only two libraries are used: itertools and random, and they are both part of the the standard python library. So if you have python you should have these two libraries.
+If needed here is where to download python: http://www.python.org/download/
 
 # Run program
 
@@ -43,6 +44,12 @@ Core to my approach was writing maintainable, readable code. I wanted to make su
 
 # Tradeoffs
 
+
+
 # Improvements
 
-Definitely would improve the way the deck is created. Right now it runs at O(n^2). I believe there is a faster way to do this. Also maybe there is a better way to run the different combinations for the aces. One that runs faster I would think. I could probably remove some modules like dealerHiddenState, dealerOpenState, and userState only because all they do is call two other modules. I don't think they're really necessary. It would just help in maybe some confusing if tracing code back, remove a layer of depth and help in understanding what my code is doing.
+Definitely would improve the way the deck is created. Right now it runs at O(n^2). I believe there is a faster way to do this. Also maybe there is a better way to run the different combinations for the aces. One that runs faster I would think. I could probably remove some modules like dealerHiddenState, dealerOpenState, and userState only because all they do is call two other modules. I don't think they're really necessary. It would just help in maybe some confusing if tracing code back, remove a layer of depth and help in understanding what my code is doing. I would lastly implemnent testing into the code so that one may test certain modules and make sure they are running smoothly.
+
+# Testing
+
+I didn't have to time to implement testing, however I will present a few ideas for tests. I'd create a test that checks that the deck has been shuffled. Another test for the calculations of the hand values, to make sure that the right values are being outputted. Very important test as this is what the whole game revolves around. I'd create a test for checking whether the hidden hand is shown when its the users turn. Also very important because that is an advantage that should be preserved for the dealer.
